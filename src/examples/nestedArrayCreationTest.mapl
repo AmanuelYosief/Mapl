@@ -1,0 +1,9 @@
+// inputs: 0
+// output: 5
+proc main() {
+  arrayof(int) a;
+  a = new arrayof(int)[((new arrayof(boolean)[((new arrayof(arrayof(int))[3]).length) + 1]).length) + 1];
+  output(a.length);
+  outchar(13);
+  outchar(10);
+}

@@ -1,0 +1,9 @@
+// inputs: 0
+// output: 99
+proc main() {
+  int z;
+  z = 99;
+  { int z; z = 0; }
+  output z;
+  outchar 13; outchar 10;
+}

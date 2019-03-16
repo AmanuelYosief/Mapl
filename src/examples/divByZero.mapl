@@ -1,0 +1,6 @@
+// inputs: 0
+// output: undefined behaviour (division by zero)
+proc main() {
+  int x;
+  x = 1 div 0;
+}

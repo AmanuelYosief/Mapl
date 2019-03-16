@@ -1,0 +1,5 @@
+// inputs: 0
+// output: undefined behaviour (null pointer)
+proc main() {
+  output ((new arrayof(arrayof(int))[99])[0])[0];
+}

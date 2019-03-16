@@ -1,0 +1,22 @@
+// inputs: 0
+// output: 99 0
+proc main() {
+   boolean b;
+   if ((sideEffectTrue()) and (noSideEffectFalse())) then {
+      output 1;
+   } else {
+      output 0;
+   }
+   outchar 13;
+   outchar 10;
+}
+
+fun boolean sideEffectTrue() {
+   output 99;
+   outchar 32;
+   return true;
+}
+
+fun boolean noSideEffectFalse() {
+   return false;
+}

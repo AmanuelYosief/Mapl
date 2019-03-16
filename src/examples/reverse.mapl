@@ -1,0 +1,35 @@
+// inputs: 5
+// output: the five inputs in reverse order
+proc main(int x0, int x1, int x2, int x3, int x4) {
+   arrayof(int) a;
+   a = new arrayof(int)[5];
+   a[0] = x0;
+   a[1] = x1;
+   a[2] = x2;
+   a[3] = x3;
+   a[4] = x4;
+   reverse(a);
+   int i;
+   i = 0;
+   while (i < (a.length)) do {
+      output a[i];
+      outchar 32;
+      i = i + 1;
+   }
+   outchar 13;
+   outchar 10;
+}
+
+proc reverse(arrayof(int) arr) {
+   int i;
+   i = 0;
+   while (i < ((arr.length) div 2)) do {
+      int temp;
+      temp = arr[i];
+      int j;
+      j = (arr.length) - (i + 1);
+      arr[i] = arr[j];
+      arr[j] = temp;
+      i = i + 1;
+   }
+}

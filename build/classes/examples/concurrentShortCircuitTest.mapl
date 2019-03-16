@@ -1,0 +1,28 @@
+// inputs: 0
+// output: 1
+proc main() {
+   boolean b1;
+   b1 = false;
+   boolean b2;
+   b2 = true;
+   boolean b3;
+   b3 = false;
+   boolean b;
+   b = tripleCheck(b1 and (sideEffect()), b2 and true, b3 and (sideEffect()));
+   if (b) then {
+      output 1;
+   } else {
+      output 0;
+   }
+   outchar 13;
+   outchar 10;
+}
+
+fun boolean tripleCheck(boolean b1, boolean b2, boolean b3) {
+   return !b1 and (b2 and !b3);
+}
+
+fun boolean sideEffect() {
+   output 123456789;
+   return true;
+}

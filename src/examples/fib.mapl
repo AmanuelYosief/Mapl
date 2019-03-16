@@ -1,0 +1,21 @@
+// inputs: 1
+// output: fibonnaci of the input
+proc main(int x) {
+   output fib(x);
+   outchar 13;
+   outchar 10;
+}
+
+fun int fib(int x) {
+   int result;
+   if (x < 2) then {
+      result = x;
+   } else {
+      int r1;
+      r1 = fib(x - 1);
+      int r2;
+      r2 = fib(x - 2);
+      result = r1 + r2;
+   }
+   return result;
+}

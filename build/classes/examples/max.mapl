@@ -1,0 +1,11 @@
+// inputs: 2
+// output: max(x, y)
+proc main(int x, int y) {
+  if (x < y) then {
+    output y;
+  } else {
+    output x;
+  }
+  outchar 13;
+  outchar 10;
+}

@@ -1,0 +1,18 @@
+// inputs: 0
+// output: TTF
+proc main() {
+  boolean b;
+  b = ((sideEffectTrue(84)) and (((sideEffectTrue(84)) and (sideEffectFalse(70))) and (sideEffectTrue(88)))) and (sideEffectFalse(89));
+  outchar 13;
+  outchar(10);
+}
+
+fun boolean sideEffectTrue(int x) {
+  outchar(x);
+  return true;
+}
+
+fun boolean sideEffectFalse(int x) {
+  outchar(x);
+  return false;
+}

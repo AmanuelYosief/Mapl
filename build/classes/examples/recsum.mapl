@@ -1,0 +1,17 @@
+// inputs: 2
+// output: x + y
+proc main(int x, int y) {
+  output recsum(x,y);
+  outchar 13; outchar 10;
+}
+
+fun int recsum(int x, int y) {
+  if (x < 0) then {
+    y = recsum(x + 1, y - 1);
+  } else {
+    if (0 < x) then {
+      y = recsum(x - 1, y + 1);
+    } else {}
+  }
+  return y;
+}

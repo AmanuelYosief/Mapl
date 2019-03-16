@@ -1,0 +1,7 @@
+// inputs: 0
+// output: infinite sequence of 7's
+proc loopForever() {
+  while (true) do {
+    output 7;
+  }
+}

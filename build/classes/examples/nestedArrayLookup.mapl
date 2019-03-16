@@ -1,0 +1,19 @@
+// inputs: 0
+// output: 123
+proc main() {
+  arrayof(arrayof(arrayof(arrayof(arrayof(int))))) a;
+  a = new arrayof(arrayof(arrayof(arrayof(arrayof(int)))))[3];
+  a[2] = new arrayof(arrayof(arrayof(arrayof(int))))[4];
+  (a[2])[3] = new arrayof(arrayof(arrayof(int)))[5];
+  ((a[2])[3])[4] = new arrayof(arrayof(int))[6];
+  (((a[2])[3])[4])[5] = new arrayof(int)[7];
+  ((((a[2])[3])[4])[5])[6] = 123;
+  ((((a[2])[3])[4])[5])[5] = 122;
+  ((((a[2])[3])[4])[5])[4] = 121;
+  ((((a[2])[3])[4])[5])[3] = 120;
+  ((((a[2])[3])[4])[5])[2] = 119;
+  ((((a[2])[3])[4])[5])[1] = 118;
+  ((((a[2])[3])[4])[5])[0] = 117;
+  output ((((a[2])[3])[4])[((((a[2])[3])[4]).length) - 1])[((((a[2])[3])[(a[(a.length) - 1]).length]).length)];
+  outchar 13; outchar 10;
+}

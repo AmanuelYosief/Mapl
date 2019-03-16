@@ -1,0 +1,14 @@
+// inputs: 0
+// output: 0
+proc main() {
+   boolean b;
+   output 0;
+   b = false and (f());
+   outchar 13;
+   outchar 10;
+}
+
+fun boolean f() {
+   output 999;
+   return true;
+}

@@ -1,0 +1,5 @@
+// inputs: 0
+// output: 5 [no newline]
+proc main() {
+  output 2+3;
+}

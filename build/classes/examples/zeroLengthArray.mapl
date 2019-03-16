@@ -1,0 +1,6 @@
+// inputs: 0
+// output: 0
+proc main() {
+  output (new arrayof(boolean)[0]).length;
+  outchar 13; outchar 10;
+}

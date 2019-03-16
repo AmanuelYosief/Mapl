@@ -1,0 +1,14 @@
+// inputs: 0
+// output: 6
+proc main() {
+   arrayof(int) a1;
+   arrayof(int) a2;
+   arrayof(int) a3;
+   output sumLength(new arrayof(int)[1], new arrayof(int)[2], new arrayof(int)[3]);
+   outchar 13;
+   outchar 10;
+}
+
+fun int sumLength(arrayof(int) a1, arrayof(int) a2, arrayof(int) a3) {
+   return (a1.length) + ((a2.length) + (a3.length));
+}

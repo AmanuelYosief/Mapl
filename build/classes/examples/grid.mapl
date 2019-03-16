@@ -1,0 +1,53 @@
+// inputs: 0
+// output: a cross made of asterisks:
+// *   *
+//  * * 
+//   *  
+//  * * 
+// *   *
+proc main() {
+   arrayof(arrayof(boolean)) grid;
+   grid = new arrayof(arrayof(boolean))[5];
+   int i;
+   i = 0;
+   while (i < (grid.length)) do {
+      grid[i] = new arrayof(boolean)[grid.length];
+      i = i + 1;
+   }
+   (grid[0])[0] = true;
+   (grid[1])[1] = true;
+   (grid[2])[2] = true;
+   (grid[3])[3] = true;
+   (grid[4])[4] = true;
+   setAntiDiagonal(grid);
+   show(grid);
+}
+
+proc setAntiDiagonal(arrayof(arrayof(boolean)) grid) {
+   int i;
+   i = 0;
+   while (i < (grid.length)) do {
+      (grid[i])[((grid[i]).length) - (i+1)] = true;
+      i = i + 1;
+   }
+}
+
+proc show(arrayof(arrayof(boolean)) grid) {
+   int i;
+   int j;
+   i = 0;
+   while (i < (grid.length)) do {
+      j = 0;
+      while (j < ((grid[i]).length)) do {
+         if ((grid[i])[j]) then {
+            outchar 42;
+         } else {
+            outchar 32;
+         }
+         j = j + 1;
+      }
+      outchar 13;
+      outchar 10;
+      i = i + 1;
+   }
+}

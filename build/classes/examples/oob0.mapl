@@ -1,0 +1,16 @@
+// inputs: 0
+// output: 92
+proc main() {
+   arrayof(int) a1;
+   arrayof(int) a2;
+   a1 = new arrayof(int)[3];
+   a2 = new arrayof(int)[2];
+   a1[0] = 90;
+   a1[1] = 91;
+   a1[2] = 92;
+   a2[0] = 93;
+   a2[1] = 94;
+   output a1[2];
+   outchar 13;
+   outchar 10;
+}

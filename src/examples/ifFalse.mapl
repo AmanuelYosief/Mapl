@@ -1,0 +1,10 @@
+// inputs: 0
+// output: 666
+proc main() {
+  if (false) then {
+    output 3;
+  } else {
+    output 666;
+  }
+  outchar 13; outchar 10;
+}

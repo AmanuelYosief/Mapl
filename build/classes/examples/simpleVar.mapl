@@ -1,0 +1,11 @@
+// inputs: 0
+// output: 10
+proc main() {
+  int x;
+  int y;
+  x = 8;
+  y = 2;
+  y = y + x;
+  output y;
+  outchar 13; outchar 10;
+}

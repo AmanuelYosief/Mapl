@@ -1,0 +1,9 @@
+// inputs: 0
+// output: 5
+proc loopNever() {
+  while (false) do {
+    output 3;
+  }
+  output 5;
+  outchar 13; outchar 10;
+}

@@ -1,0 +1,19 @@
+// inputs: 2
+// output: xor of the two inputs (if each input is either 0 or 1)
+proc main(int x, int y) {
+   boolean a;
+   boolean b;
+   if (x == 0) then {a = false;} else {a = true;}
+   if (y == 0) then {b = false;} else {b = true;}
+   if (a and !b) then {
+      output 1;
+   } else {
+      if (b and !a) then {
+         output 1;
+      } else {
+         output 0;
+      }
+   }
+   outchar 13;
+   outchar 10;
+}
